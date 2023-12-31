@@ -1,0 +1,90 @@
+.breadcrumb_Layout {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+/* .breadcrumb_section {
+} */
+.page_Title {
+  color: #030037;
+  /* Typeface/Nunito Sans/Headline H5 */
+  font-size: 24px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  line-height: 120%;
+}
+.breadcrumb_list {
+  margin: 0;
+  padding: 5px;
+}
+.breadcrumb_list li {
+  display: inline;
+  color: #030037;
+  text-align: center;
+
+  /* Typeface/Nunito Sans/Body 2 */
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 20px;
+  letter-spacing: 0.035px;
+}
+.breadcrumb_list li:last-child {
+  color: #686687;
+  text-align: center;
+  /* Typeface/Nunito Sans/Body 2 */
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 20px;
+  letter-spacing: 0.035px;
+}
+.breadcrumb_list li + li::before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+.breadcrumb_filter_section {
+  display: flex;
+  align-items: center;
+}
+
+.selectDropdown {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  width: 200px;
+  margin: 0 5px;
+}
+
+.selectDropdown option {
+  background-color: #fff;
+  color: #939596;
+
+  /* Typeface/Nunito Sans/Body 2 */
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 20px;
+  letter-spacing: 0.035px;
+}
+
+.selectDropdown option:hover {
+  background-color: #f5f5f5;
+}
+
+.selectDropdown option:selected {
+  background-color: #e0e0e0;
+}
+.notificationIcon {
+  padding: 10px;
+  cursor: pointer;
+}
+.logOut_text {
+  /* Typeface/Nunito Sans/Body 2 */
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.035px;
+}

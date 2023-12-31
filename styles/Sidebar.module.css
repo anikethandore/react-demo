@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
+.sidebar {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 5px rgba(3, 0, 55, 0.08);
+  /* width: 300px; */
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease;
+  display: flex;
+}
+.sidebar .sidebar__icon {
+  width: 60px;
+  padding: 5px;
+  background-color: #f4f5fc80;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+.sidebar__icon nav ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstSection nav .navItem {
+  cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 50%;
+    height: 30px;
+    padding: 5px 16px;
+    margin: 9px 0;
+    color: #fff;
+    transition: 0.3s;
+}
+/* .navItem a:hover {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0px 10px;
+  background-color: #153ac7;
+}
+.navItem a:focus {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0px 10px;
+  background-color: #153ac7;
+} */
+.sidebar__Profile nav ul {
+  padding-left: 0;
+}
+.sidebar__Profile nav .navItem_ {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  margin: 10px 0;
+}
+/* .sidebar__Profile nav .navItem_:not(:last-child) img:hover {
+  display: block;
+  background-color: #153ac7;
+  color: #ffffff;
+  width: 100%;
+  border-radius: 4px;
+} */
+
+.sidebar .sidebar__menu {
+  /* width: 100%;
+  height: 100%; */
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: width 0.3s ease;
+}
+
+.sidebar__menu.collapsed {
+  /* width: 60px; */
+  transition-delay: 0.1s;
+  /* overflow: hidden; */
+  display: none;
+}
+
+.title {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #233244;
+  margin-top: 5px;
+}
+.searchInputBox {
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  padding: 12px 16px;
+}
+.moduleLabel {
+  color: #b8babc;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.moduleItems ul {
+  padding-left: 0;
+}
+
+.moduleItems .menuItem {
+  margin: 15px 0;
+  list-style: none;
+  display: block;
+}
+.menuItem a {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  color: #686687;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+.menuItem a:hover {
+  border-radius: 8px;
+  background: #153ac7;
+  color: #fff;
+  padding: 5px 10px;
+  /* Typeface/Nunito Sans/Subtitle 2 */
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+.menuItemActive a {
+  border-radius: 8px;
+  background: #153ac7;
+  color: #fff;
+  padding: 5px 10px;
+  /* Typeface/Nunito Sans/Subtitle 2 */
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+
+
+.menuItem a:focus {
+  border-radius: 8px;
+  background: #153ac7;
+  color: #fff;
+  padding: 5px 10px;
+  /* Typeface/Nunito Sans/Subtitle 2 */
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+.menuItem a:active {
+  border-radius: 8px;
+  background: #153ac7;
+  color: #fff;
+  padding: 5px 10px;
+  /* Typeface/Nunito Sans/Subtitle 2 */
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+.carratIcon {
+  float: right;
+  margin-top: -20px;
+  margin-right: 5px;
+}
+.moduleItems .subMenuItem {
+  margin: 10px 5px;
+  list-style: none;
+}
+.subMenuItem_active {
+  display: block;
+}
+.subMenuItem_hide {
+  display: none;
+}
+.subMenuItem_visible {
+  display: block;
+}
+.subMenuItem a {
+  color: #686687;
+  /* Typeface/Nunito Sans/Body 1 */
+  font-size: 16px;
+  padding: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.08px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.isActiveMenuItem a {
+  border-radius: 8px;
+  background: #153ac7;
+  color: #fff;
+  padding: 5px 20px;
+  /* Typeface/Nunito Sans/Subtitle 2 */
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  /* Card Shadow/04 */
+  box-shadow: 0px 4px 16px 0px rgba(3, 0, 55, 0.08);
+}
+.isActivesubMenuItem a {
+  border-radius: 8px;
+  background: #153ac7;
+  color: #fff;
+  padding: 5px 25px;
+  /* Typeface/Nunito Sans/Subtitle 2 */
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  /* Card Shadow/04 */
+  box-shadow: 0px 4px 16px 0px rgba(3, 0, 55, 0.08);
+}
+
+.last__section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last__section_info {
+  display: flex;
+  align-items: center;
+}
+
+.last__section_column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Adjust the spacing between the columns */
+}
+
+.last__section_name {
+  color: #233244;
+
+  /* Typeface/Nunito Sans/Subtitle 2 */
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  cursor: default;
+}
+.last__section_email {
+  color: #233244;
+  /* max-width: 100px; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* Typeface/Nunito Sans/Body 3 */
+  font-size: 12px;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.12px;
+  cursor: default;
+}
+.last__section_email:hover {
+  max-width: none;
+  white-space: normal;
+  overflow: visible;
+}
+.logoutbtn {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.collapseButton {
+  position: relative;
+  left: 15px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 35px;
+  color: #233244;
+  outline: none;
+  padding: 0;
+}
